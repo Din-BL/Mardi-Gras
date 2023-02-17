@@ -7,3 +7,6 @@ To ensure that the website is accessible and responsive on different devices, I 
 I planned out the design using Figma, a powerful design tool that helped me organize my ideas and visualize how the website would look before I started coding.
 
 Overall, I'm really happy with how my Mardi Gras carnival project turned out, and I feel like it showcases my front-end development skills well.
+
+<img width="394" alt="צילום מסך 2023-02-17 042623" src="https://user-images.githubusercontent.com/93730629/219534031-173aa5d8-8478-4a4e-88c8-55a6655390d4.png">
+
