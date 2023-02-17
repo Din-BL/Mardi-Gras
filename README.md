@@ -1,8 +1,8 @@
-# Mardi-Gras
 <div style="display: flex;">
   <img style="display: inline;" width="394" alt="צילום מסך 2023-02-17 042623" src="https://user-images.githubusercontent.com/93730629/219534031-173aa5d8-8478-4a4e-88c8-55a6655390d4.png">
 <img width="392" height="222" alt="צילום מסך 2023-02-17 043254" src="https://user-images.githubusercontent.com/93730629/219534977-d5d72040-415d-459c-b467-827b795a645f.png">
 
+# Mardi-Gras
 
 I've created a front-end project based on the Mardi Gras carnival using HTML, CSS, JS, Sass, Figma, and Bootstrap. I wanted to capture the festive spirit and excitement of the carnival through my website, and I'm really proud of how it turned out.
 
