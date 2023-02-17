@@ -1,0 +1,289 @@
+body {
+  background-color: #f2f2f2;
+}
+body nav {
+  height: 65px;
+}
+body nav .navbar-toggler {
+  background-color: #8cbf3f;
+  color: #0d0d0d;
+  font-family: "Roboto Serif", serif;
+  width: 100%;
+}
+body nav .nav-link {
+  color: #0d0d0d;
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+}
+body #trivia-container {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+body #trivia-container.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .trivia {
+  background: linear-gradient(0.25turn, #8cbf3f, #f2cc0f);
+  height: 80vh;
+  border-radius: 20px;
+  border: solid black 2px;
+}
+body #game-container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+}
+body #game-container #img-happy {
+  display: none;
+}
+body #game-container #img-sad {
+  display: none;
+}
+body #game-container #img-happy.active {
+  display: block;
+  background-image: url("./images/Good.png");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+body #game-container #img-sad.active {
+  display: block;
+  background-image: url("./images/Sad.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+body #game-container .title {
+  font-family: "Roboto Serif", serif;
+  padding: 0px 30px 0px 30px;
+  font-size: large;
+  font-weight: bold;
+}
+body #game-container .questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 280px;
+}
+body #game-container .questions button {
+  width: 320px;
+  border-radius: 40px;
+  font-family: "Roboto Serif", serif;
+  height: 50px;
+}
+body #game-container .score {
+  font-family: "Roboto Serif", serif;
+  font-size: x-large;
+}
+body #game-container .score .score_end {
+  font-size: xx-large;
+}
+body #game-container.active {
+  display: flex;
+  height: 100%;
+}
+body .correct {
+  background-color: #8cbf3f;
+}
+body .incorrect {
+  background-color: red;
+}
+body .hide {
+  display: none;
+}
+body header .row {
+  align-items: center;
+  background: url(./images/Mradi.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 530px;
+  justify-content: end;
+}
+body header .row .text h1 {
+  font-size: 29px;
+  font-family: "Henny Penny";
+}
+body header .row .text h1 span:nth-child(1) {
+  color: #9453a6;
+}
+body header .row .text h1 span:nth-child(2) {
+  color: #8cbf3f;
+}
+body header .row .text h1 span:nth-child(3) {
+  color: #f2f2f2;
+}
+body header .row .text p {
+  font-family: "Roboto Serif", serif;
+}
+body header .row .text .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .row .text .btn-container button {
+  transition: 2s;
+  font-family: "Henny Penny";
+  background: linear-gradient(#8cbf3f, #f2cc0f);
+  color: #0d0d0d;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20%;
+  font-size: large;
+}
+body header .row .text .btn-container button:hover {
+  box-shadow: 0 0.5em 2.5em -0.5em #9453a6;
+  border-color: #9453a6;
+  color: #f2f2f2;
+}
+body header .row .text .btn-container button:hover {
+  transform: rotate(360deg) scale(2);
+}
+body main .carousel-inner .carousel-item {
+  min-height: 460px;
+  max-height: 660px;
+}
+body main .carousel-inner .carousel-item img {
+  filter: brightness(55%);
+}
+body main .carousel-inner .carousel-item .carousel-caption h5 {
+  font-family: "Pattaya", sans-serif;
+  font-size: x-large;
+}
+body main .carousel-inner .carousel-item .carousel-caption p {
+  font-family: "Roboto Serif", serif;
+  font-size: large;
+}
+body section {
+  height: 50rem;
+}
+body section .title {
+  padding: 80px 0px 50px 0px;
+}
+body section .title h3 {
+  font-family: "Henny Penny";
+  font-size: xx-large;
+  height: 80px;
+}
+body section .title p {
+  font-family: "Roboto Serif", serif;
+  font-size: large;
+}
+body section .card-container .row {
+  align-items: center;
+  height: 250px;
+}
+body section .card-container .row .card-body {
+  display: flex;
+  justify-content: center;
+}
+body section .card-container .row .card-body img {
+  height: 100px;
+  width: 150px;
+}
+body section .card-container .row .card-body button {
+  border: none;
+}
+body section .card-container .row .card-body .toggle {
+  font-family: "Henny Penny";
+  background: linear-gradient(#8cbf3f, #f2cc0f);
+  color: #0d0d0d;
+  cursor: pointer;
+}
+body section .card-container .row .card-body .toggle:hover {
+  box-shadow: 0 0.5em 2.5em -0.5em #9453a6;
+  border-color: #9453a6;
+  color: #f2f2f2;
+}
+body section .card-container .row .card-body .modal-title {
+  font-size: large;
+}
+body section .card-container .row .card-body .modal-body {
+  font-family: "Roboto Serif", serif;
+  font-size: small;
+}
+body footer {
+  background-color: #9453a6;
+}
+body footer .row {
+  align-items: center;
+  font-family: "Roboto Serif", serif;
+}
+body footer .row .left {
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+}
+body footer .row .left .logo_container {
+  height: 110px;
+}
+body footer .row .left .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 380px;
+}
+body footer .row .left .copyright {
+  font-size: small;
+}
+body footer .row .center {
+  flex-direction: column;
+  padding: 35px;
+}
+body footer .row .center .icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+body footer .row .right {
+  flex-direction: column;
+  padding: 30px;
+}
+body footer .row .right .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 25px 10px 25px;
+}
+body footer .row .right .info h5 {
+  font-family: "Pattaya", sans-serif;
+}
+body footer .row .right .info p {
+  font-size: 12px;
+}
+body footer .row .right .icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 550px) {
+  body header .row {
+    background-image: none;
+    background-color: rgb(255, 205, 1);
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  body header .row {
+    background-image: none;
+    background-color: rgb(255, 205, 1);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  body header .row {
+    background-image: none;
+    background-color: rgb(255, 205, 1);
+  }
+}
+@media (max-width: 768px) {
+  body main .carousel-inner .carousel-item img {
+    filter: none;
+    height: 460px;
+  }
+}/*# sourceMappingURL=style.css.map */
