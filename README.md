@@ -4,7 +4,7 @@
 
 
 
-So, I created a front-end project based on the Mardi Gras carnival using HTML, CSS, JS, Sass, Figma, and Bootstrap. I wanted to capture the festive spirit and excitement of the carnival through my website, and I'm really proud of how it turned out.
+I created a front-end project based on the Mardi Gras carnival using HTML, CSS, JS, Sass, Figma, and Bootstrap. I wanted to capture the festive spirit and excitement of the carnival through my website, and I'm really proud of how it turned out.
 
 To start, I used HTML to create the basic structure of the website. Then, I used CSS and Sass to add vibrant colors, festive typography, and intricate graphics, giving it a unique and engaging look. I also used animation to make the elements on the page come alive and keep visitors engaged.
 
