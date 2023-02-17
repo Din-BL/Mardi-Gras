@@ -28,7 +28,6 @@ $Roboto: "Roboto Serif", serif;
 // NavBar
 
 @mixin myNav {
-  height: 65px;
   .navbar-toggler {
     background-color: $green;
     color: $black;
@@ -54,7 +53,7 @@ $Roboto: "Roboto Serif", serif;
       align-items: center;
       height: 170px;
       .logo_container {
-        height: 110px;
+        padding-top: 10px;
       }
       .menu {
         display: flex;
@@ -68,7 +67,7 @@ $Roboto: "Roboto Serif", serif;
     }
     .center {
       flex-direction: column;
-      padding: 35px;
+      padding-top: 45px;
       .icon {
         display: flex;
         justify-content: space-evenly;
@@ -81,7 +80,7 @@ $Roboto: "Roboto Serif", serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 25px 10px 25px {
+        padding: 0px 25px {
 
         }
         h5 {

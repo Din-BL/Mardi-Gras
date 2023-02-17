@@ -9,14 +9,16 @@ body {
   }
   // Form
   main {
-    height: 135vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient($white, $purple);
     font-family: $Roboto;
+    padding: 80px 0px;
 
     form {
+      width: 500px;
+      max-width: 95%;
       header {
         font-family: $Henny;
         height: 80px;
@@ -66,14 +68,6 @@ body {
     @include myFooter();
     .fa-solid {
       color: $black;
-    }
-  }
-  // Media
-  @media (max-width: 656px) {
-    main {
-      form {
-        width: 300px;
-      }
     }
   }
 }

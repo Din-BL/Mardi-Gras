@@ -1,9 +1,6 @@
 body {
   background-color: #f2f2f2;
 }
-body nav {
-  height: 65px;
-}
 body nav .navbar-toggler {
   background-color: #8cbf3f;
   color: #0d0d0d;
@@ -96,7 +93,7 @@ body footer .row .left {
   height: 170px;
 }
 body footer .row .left .logo_container {
-  height: 110px;
+  padding-top: 10px;
 }
 body footer .row .left .menu {
   display: flex;
@@ -109,7 +106,7 @@ body footer .row .left .copyright {
 }
 body footer .row .center {
   flex-direction: column;
-  padding: 35px;
+  padding-top: 45px;
 }
 body footer .row .center .icon {
   display: flex;
@@ -123,7 +120,7 @@ body footer .row .right .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 25px 10px 25px;
+  padding: 0px 25px;
 }
 body footer .row .right .info h5 {
   font-family: "Pattaya", sans-serif;

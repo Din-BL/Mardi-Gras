@@ -8,6 +8,7 @@ body {
   // Main
   main {
     height: 86rem;
+    filter: brightness(0.9);
     background: url("./images/pexels-eva-bronzini-8059554.jpg") center no-repeat;
     background-size: cover;
     // Header
@@ -24,22 +25,22 @@ body {
           &:hover {
             transform: scale(1.1);
             span:nth-child(1) {
-              color: $purple;
-            }
-            span:nth-child(2) {
               color: $green;
             }
-            span:nth-child(3) {
+            span:nth-child(2) {
               color: $yellow;
             }
+            span:nth-child(3) {
+              color: $purple;
+            }
             span:nth-child(4) {
-              color: black;
+              color: $green;
             }
             span:nth-child(5) {
-              color: $white;
+              color: $yellow;
             }
             span:nth-child(6) {
-              color: rgba(0, 208, 255, 0.815);
+              color: $purple;
             }
           }
         }

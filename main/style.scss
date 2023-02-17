@@ -107,7 +107,6 @@ body {
     background-size: cover;
     min-height: 530px;
     justify-content: end;
-    width: 100%;
     .text {
       h1 {
         font-size: 29px;
@@ -126,9 +125,6 @@ body {
         font-family: $Roboto;
       }
       .btn-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         button {
           transition: 2s;
           @include myButton();
@@ -145,16 +141,14 @@ body {
 
   // Carousel
   main {
-    height: 530px;
+    padding-bottom: 50px;
     .carousel-inner {
       .carousel-item {
-        min-height: 460px;
+        height: 550px;
         img {
           filter: brightness(55%);
         }
         .carousel-caption {
-          // color: $white;
-          // height: 110px;
           h5 {
             font-family: $Pattaya;
             font-size: x-large;
@@ -170,11 +164,12 @@ body {
 
   // Section
   section {
+    padding-bottom: 65px;
+
     .title {
       h3 {
         font-family: $Henny;
         font-size: xx-large;
-        height: 80px;
       }
       p {
         font-family: $Roboto;
@@ -216,67 +211,10 @@ body {
   }
 
   // Media Query
-  @media (max-width: 550px) {
+  @media (max-width: 992px) {
     header {
       background-image: none;
       background-color: rgba(255, 205, 1, 255);
-      // .text {
-      //   .title {
-      //     display: block;
-      //     h1 {
-      //       font-size: 20px;
-      //       margin-left: 40px;
-      //       height: 45px;
-      //     }
-      //   }
-      //   p {
-      //     font-size: 13px;
-      //     padding: 0;
-      //   }
-      // }
-    }
-  }
-  @media (min-width: 550px) and (max-width: 768px) {
-    header {
-      background-image: none;
-      background-color: rgba(255, 205, 1, 255);
-      // .text {
-      //   .title {
-      //     display: block;
-      //     h1 {
-      //       font-size: 2rem;
-      //       margin-left: 60px;
-      //     }
-      //   }
-      //   p {
-      //     padding: 30px;
-      //     font-size: 17px;
-      //   }
-      // }
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 992px) {
-    header {
-      background-image: none;
-      background-color: rgba(255, 205, 1, 255);
-      // .text {
-      // .title {
-      //   display: block;
-      //   h1 {
-      //     font-size: 45px;
-      //     margin-left: 86px;
-      //     height: 70px;
-      //   }
-      // }
-      // p {
-      //   font-size: 29px;
-      //   font-family: "Roboto Serif", serif;
-      //   font-weight: 300;
-      //   padding: 50px;
-      //   margin-left: 40px;
-      // }
-      // }
     }
   }
 
