@@ -2,16 +2,7 @@ https://github.com/DinBoy5/Mardi-Gras/assets/93730629/301b08c7-ec5c-4691-bff6-8c
 
 # Mardi-Gras
 
-I've created a front-end project based on the Mardi Gras carnival using HTML, CSS, JS, Sass, Figma, and Bootstrap.<br>
-I wanted to capture the festive spirit and excitement of the carnival through my website, and I'm proud of how it turned out.<br>
-
-To start, I used HTML to create the basic structure of the website.<br>
-Then, I used CSS and Sass to add vibrant colors, festive typography, and intricate graphics, giving it a unique and engaging look.<br>
-I also used animation to make the elements on the page come alive and keep visitors engaged.<br>
-
-To ensure that the website is accessible and responsive on different devices, I used BT to design a layout that is flexible and user-friendly.<br>
-I also used JavaScript to enhance the user experience with dynamic features like interactive animations and countdown timers.<br>
-
-I planned out the design using Figma, a powerful design tool that helped me organize my ideas and visualize how the website would look before I started coding.<br>
-
-Overall, I'm really happy with how my Mardi Gras carnival project turned out, and I feel like it showcases my front-end development skills well.
+I created a front-end Mardi Gras carnival project using HTML, CSS, JS, Sass, Figma, and Bootstrap.<br>
+The website captures the festive spirit with vibrant colors, animations, and interactive features.<br>
+It's accessible and responsive on various devices.<br>
+I'm proud of the outcome, and it showcases my front-end development skills effectively.
