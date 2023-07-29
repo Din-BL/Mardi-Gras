@@ -13,65 +13,69 @@ body nav .nav-link {
   font-family: "Roboto Serif", serif;
 }
 body main {
+  padding-bottom: 40px;
+  background: linear-gradient(0.25turn, #8cbf3f, #f2cc0f);
+}
+body main header {
+  font-family: "Henny Penny";
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#f2f2f2, #9453a6);
-  font-family: "Roboto Serif", serif;
-  padding: 80px 0px;
+  height: 150px;
 }
-body main form {
-  width: 500px;
-  max-width: 95%;
-  padding: 35px;
-  border-radius: 3%;
-  width: 500px;
-  background-color: white;
-}
-body main form header {
-  font-family: "Henny Penny";
-  height: 80px;
-}
-body main form header span:nth-child(1) {
+body main header span:nth-child(1) {
   color: #9453a6;
 }
-body main form header span:nth-child(2) {
+body main header span:nth-child(2) {
   color: #8cbf3f;
 }
-body main form .input_container {
-  height: 60px;
+body main header span:nth-child(3) {
+  color: #f2cc0f;
 }
-body main form .input_container input {
-  margin-top: 5px;
+body main header h1 {
+  transition: 1s;
 }
-body main form .input_container .line {
-  border-top: 1px solid black;
-  margin: 0 12px;
+body main header h1:hover {
+  transform: scale(1.2);
 }
-body main form .btn-container {
+body main .accordion {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 700px;
+  align-items: center;
 }
-body main form .btn-container button {
-  border-color: black;
-  transition: 0.8s;
-  font-family: "Henny Penny";
-  background: linear-gradient(#8cbf3f, #f2cc0f);
-  color: #0d0d0d;
-  cursor: pointer;
+body main .accordion .accordion-item-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Serif", serif;
 }
-body main form .btn-container button:hover {
-  box-shadow: 0 0.5em 2.5em -0.5em #9453a6;
-  border-color: #9453a6;
-  color: #f2f2f2;
+body main .accordion .accordion-item-header h4 {
+  margin-left: 15px;
 }
-body main form span {
-  margin-left: 12px;
-  color: red;
+body main .accordion .accordion-item-body {
+  font-family: "Roboto Serif", serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
-body main form i,
-body main form .form-sent {
-  color: seagreen;
+body main .accordion .accordion-item-body .accordion-item-body-content {
+  border-top: 1px solid #0d0d0d;
+  -o-border-image: linear-gradient(to right, transparent, #0d0d0d, transparent) 1;
+     border-image: linear-gradient(to right, transparent, #0d0d0d, transparent) 1;
+}
+body main .accordion .accordion-item-body .accordion-item-body-content p {
+  margin-left: 15px;
+}
+body main .accordion .accordion-item-header::after {
+  content: " +";
+  float: right;
+  margin-right: 5px;
+}
+body main .accordion .accordion-item-header.active::after {
+  content: " -";
 }
 body footer {
   background-color: #9453a6;
@@ -124,7 +128,4 @@ body footer .row .right .info p {
 body footer .row .right .icon {
   display: flex;
   justify-content: space-evenly;
-}
-body footer .fa-solid {
-  color: #0d0d0d;
 }/*# sourceMappingURL=style.css.map */

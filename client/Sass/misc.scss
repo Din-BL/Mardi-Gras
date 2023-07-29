@@ -1,0 +1,99 @@
+// Colors
+
+$black: #0d0d0d;
+$white: #f2f2f2;
+$green: #8cbf3f;
+$purple: #9453a6;
+$yellow: #f2cc0f;
+
+// Fonts
+
+$Henny: "Henny Penny";
+$Pattaya: "Pattaya", sans-serif;
+$Roboto: "Roboto Serif", serif;
+
+// Button
+
+@mixin myButton {
+  font-family: $Henny;
+  background: linear-gradient($green, $yellow);
+  color: $black;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0.5em 2.5em -0.5em $purple;
+    border-color: $purple;
+    color: $white;
+  }
+}
+// NavBar
+
+@mixin myNav {
+  .navbar-toggler {
+    background-color: $green;
+    color: $black;
+    font-family: $Roboto;
+    width: 100%;
+  }
+  .nav-link {
+    color: $black;
+    text-align: center;
+    font-family: $Roboto;
+  }
+}
+
+// Footer
+
+@mixin myFooter {
+  background-color: $purple;
+  .row {
+    align-items: center;
+    font-family: $Roboto;
+    .left {
+      flex-direction: column;
+      align-items: center;
+      height: 170px;
+      .logo_container {
+        padding-top: 10px;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 380px;
+      }
+      .copyright {
+        font-size: small;
+      }
+    }
+    .center {
+      flex-direction: column;
+      padding-top: 45px;
+      .icon {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    .right {
+      flex-direction: column;
+      padding: 30px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 25px {
+
+        }
+        h5 {
+          font-family: $Pattaya;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      .icon {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
