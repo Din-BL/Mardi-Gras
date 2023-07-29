@@ -1,6 +1,4 @@
-<div style="display: flex;">
-  <img style="display: inline;" height="222" width="380" alt="צילום מסך 2023-02-17 042623" src="https://user-images.githubusercontent.com/93730629/219534031-173aa5d8-8478-4a4e-88c8-55a6655390d4.png">
-<img width="380" height="222" alt="צילום מסך 2023-02-17 043254" src="https://user-images.githubusercontent.com/93730629/219534977-d5d72040-415d-459c-b467-827b795a645f.png">
+https://github.com/DinBoy5/Mardi-Gras/assets/93730629/301b08c7-ec5c-4691-bff6-8c17644e301b
 
 # Mardi-Gras
 
