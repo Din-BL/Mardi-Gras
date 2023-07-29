@@ -71,6 +71,7 @@ body main form span {
 body main form i,
 body main form .form-sent {
   color: seagreen;
+  text-align: center;
 }
 body footer {
   background-color: #9453a6;
