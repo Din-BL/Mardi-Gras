@@ -1,4 +1,4 @@
-https://github.com/DinBoy5/Mardi-Gras/assets/93730629/b8081e0f-c952-4375-bbd5-f86799d330d7
+https://github.com/DinBoy5/Mardi-Gras/assets/93730629/fcc44be2-f115-46eb-845f-f7c08414c85e
 
 # Mardi-Gras
 
