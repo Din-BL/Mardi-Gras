@@ -18,17 +18,20 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
   }
+
   #trivia-container.active {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .trivia {
     background: linear-gradient(0.25turn, $green, $yellow);
     height: 80vh;
     border-radius: 20px;
     border: solid black 2px;
   }
+
   #game-container {
     display: none;
     flex-direction: column;
@@ -39,6 +42,7 @@ body {
     #img-happy {
       display: none;
     }
+
     #img-sad {
       display: none;
     }
@@ -51,6 +55,7 @@ body {
       height: 150px;
       width: 150px;
     }
+
     #img-sad.active {
       display: block;
       background-image: url("./images/Sad.jpg");
@@ -66,11 +71,13 @@ body {
       font-size: large;
       font-weight: bold;
     }
+
     .questions {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       height: 280px;
+
       button {
         width: 320px;
         border-radius: 40px;
@@ -78,62 +85,79 @@ body {
         height: 50px;
       }
     }
+
     .score {
       font-family: $Roboto;
       font-size: x-large;
+
       .score_end {
         font-size: xx-large;
       }
     }
   }
+
   #game-container.active {
     display: flex;
     height: 100%;
   }
+
   .correct {
     background-color: $green;
   }
+
   .incorrect {
     background-color: red;
   }
+
   .hide {
     display: none;
   }
 
   // Header
-  header {
-    align-items: center;
+  .headerContainer {
     background: url(./images/Mradi.jpg) center no-repeat;
     background-size: cover;
-    min-height: 530px;
-    justify-content: end;
-    .text {
-      h1 {
-        font-size: 29px;
-        font-family: $Henny;
-        span:nth-child(1) {
-          color: $purple;
-        }
-        span:nth-child(2) {
-          color: $green;
-        }
-        span:nth-child(3) {
-          color: $white;
-        }
-      }
-      p {
-        font-family: $Roboto;
-      }
-      .btn-container {
-        button {
-          transition: 2s;
-          @include myButton();
-          &:hover {
-            transform: rotate(360deg) scale(2);
+
+    header {
+      align-items: center;
+      min-height: 530px;
+      justify-content: end;
+
+      .text {
+        h1 {
+          font-size: 29px;
+          font-family: $Henny;
+
+          span:nth-child(1) {
+            color: $purple;
           }
-          padding: 10px;
-          border-radius: 20%;
-          font-size: large;
+
+          span:nth-child(2) {
+            color: $green;
+          }
+
+          span:nth-child(3) {
+            color: $white;
+          }
+        }
+
+        p {
+          font-family: $Roboto;
+        }
+
+        .btn-container {
+          button {
+            transition: 2s;
+            @include myButton();
+
+            &:hover {
+              transform: rotate(360deg) scale(2);
+            }
+
+            padding: 10px;
+            border-radius: 20%;
+            font-size: large;
+          }
         }
       }
     }
@@ -142,17 +166,21 @@ body {
   // Carousel
   main {
     padding-bottom: 50px;
+
     .carousel-inner {
       .carousel-item {
         height: 550px;
+
         img {
           filter: brightness(55%);
         }
+
         .carousel-caption {
           h5 {
             font-family: $Pattaya;
             font-size: x-large;
           }
+
           p {
             font-family: $Roboto;
             font-size: large;
@@ -169,33 +197,40 @@ body {
     .title {
       h3 {
         font-family: $Henny;
-        font-size: xx-large;
       }
+
       p {
         font-family: $Roboto;
         font-size: large;
       }
     }
+
     .card-container {
       .row {
         align-items: center;
         height: 250px;
+
         .card-body {
           display: flex;
           justify-content: center;
+
           img {
             height: 100px;
             width: 150px;
           }
+
           button {
             border: none;
           }
+
           .toggle {
             @include myButton();
           }
+
           .modal-title {
             font-size: large;
           }
+
           .modal-body {
             font-family: $Roboto;
             font-size: small;
@@ -211,10 +246,16 @@ body {
   }
 
   // Media Query
-  @media (max-width: 992px) {
-    header {
-      background-image: none;
-      background-color: rgba(255, 205, 1, 255);
+  @media (max-width: 480px) {
+    .headerContainer div header .text h1 {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .headerContainer div header .text h1 {
+      font-size: 22px;
     }
   }
 
@@ -228,6 +269,18 @@ body {
           }
         }
       }
+    }
+
+    section div .title h3 {
+      padding-bottom: 15px;
+    }
+
+  }
+
+  @media (max-width: 992px) {
+    .headerContainer {
+      background-image: none;
+      background-color: rgba(255, 205, 1, 255);
     }
   }
 }

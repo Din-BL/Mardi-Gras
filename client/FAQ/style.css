@@ -128,4 +128,12 @@ body footer .row .right .info p {
 body footer .row .right .icon {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 480px) {
+  body main header h1 {
+    font-size: x-large;
+  }
+  body main h4 {
+    font-size: medium;
+  }
 }/*# sourceMappingURL=style.css.map */

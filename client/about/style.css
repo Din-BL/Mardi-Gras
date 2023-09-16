@@ -15,17 +15,10 @@ body nav .nav-link {
 body header {
   color: #0d0d0d;
 }
-body header .row {
-  height: 600px;
-}
-body header .row .text {
-  height: 520px;
-  padding-top: 70px;
-}
 body header .row .text h1 {
   font-family: "Henny Penny";
-  height: 90px;
   font-size: 30px;
+  padding-bottom: 10px;
 }
 body header .row .text h1 span:nth-child(1) {
   color: #9453a6;
@@ -51,14 +44,11 @@ body main {
   color: #0d0d0d;
 }
 body main .row {
-  height: 800px;
-}
-body main .row .text {
-  height: 520px;
+  margin-bottom: 50px;
 }
 body main .row .text h1 {
   font-family: "Henny Penny";
-  height: 100px;
+  padding-bottom: 10px;
 }
 body main .row .text h1 span:nth-child(1) {
   color: #9453a6;
@@ -134,14 +124,13 @@ body footer .row .right .icon {
 }
 @media (max-width: 768px) {
   body header .row {
-    height: 420px;
+    padding: 50px 0px;
   }
   body header .row .text p {
     font-size: 18px;
   }
   body header .row .text h1 {
     font-size: x-large;
-    height: 75px;
   }
   body main .row .text p {
     font-size: 18px;

@@ -99,30 +99,32 @@ body .incorrect {
 body .hide {
   display: none;
 }
-body header {
-  align-items: center;
+body .headerContainer {
   background: url(./images/Mradi.jpg) center no-repeat;
   background-size: cover;
+}
+body .headerContainer header {
+  align-items: center;
   min-height: 530px;
   justify-content: end;
 }
-body header .text h1 {
+body .headerContainer header .text h1 {
   font-size: 29px;
   font-family: "Henny Penny";
 }
-body header .text h1 span:nth-child(1) {
+body .headerContainer header .text h1 span:nth-child(1) {
   color: #9453a6;
 }
-body header .text h1 span:nth-child(2) {
+body .headerContainer header .text h1 span:nth-child(2) {
   color: #8cbf3f;
 }
-body header .text h1 span:nth-child(3) {
+body .headerContainer header .text h1 span:nth-child(3) {
   color: #f2f2f2;
 }
-body header .text p {
+body .headerContainer header .text p {
   font-family: "Roboto Serif", serif;
 }
-body header .text .btn-container button {
+body .headerContainer header .text .btn-container button {
   transition: 2s;
   font-family: "Henny Penny";
   background: linear-gradient(#8cbf3f, #f2cc0f);
@@ -132,12 +134,12 @@ body header .text .btn-container button {
   border-radius: 20%;
   font-size: large;
 }
-body header .text .btn-container button:hover {
+body .headerContainer header .text .btn-container button:hover {
   box-shadow: 0 0.5em 2.5em -0.5em #9453a6;
   border-color: #9453a6;
   color: #f2f2f2;
 }
-body header .text .btn-container button:hover {
+body .headerContainer header .text .btn-container button:hover {
   transform: rotate(360deg) scale(2);
 }
 body main {
@@ -162,7 +164,6 @@ body section {
 }
 body section .title h3 {
   font-family: "Henny Penny";
-  font-size: xx-large;
 }
 body section .title p {
   font-family: "Roboto Serif", serif;
@@ -253,15 +254,29 @@ body footer .row .right .icon {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 992px) {
-  body header {
-    background-image: none;
-    background-color: rgb(255, 205, 1);
+@media (max-width: 480px) {
+  body .headerContainer div header .text h1 {
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 769px) {
+  body .headerContainer div header .text h1 {
+    font-size: 22px;
   }
 }
 @media (max-width: 768px) {
   body main .carousel-inner .carousel-item img {
     filter: none;
     height: 460px;
+  }
+  body section div .title h3 {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 992px) {
+  body .headerContainer {
+    background-image: none;
+    background-color: rgb(255, 205, 1);
   }
 }/*# sourceMappingURL=style.css.map */

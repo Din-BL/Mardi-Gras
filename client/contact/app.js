@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
   // first name
   let valueF = fName.value;
   if (!valueF.match(/^.{3,7}$/) || !valueF.match(/^[a-zA-Z]+$/)) {
-    fError.innerText = "First Name Is Not Valid";
+    fError.innerText = "Invalid name";
     return false;
   }
   fError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
   // last name
   let valueL = lName.value;
   if (!valueL.match(/^[a-zA-Z ,.'-]+$/g) || !valueL.match(/^.{2,9}$/)) {
-    lError.innerText = "Last Name Is Not Valid";
+    lError.innerText = "Invalid last name";
     return false;
   }
   lError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
@@ -30,7 +30,7 @@ form.addEventListener("submit", (e) => {
   // email
   let valueE = email.value;
   if (!valueE.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
-    emailError.innerText = "Email Is Not Valid";
+    emailError.innerText = "Invalid email";
     return false;
   }
   emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
   // text area
   let valueT = text.value;
   if (!valueT.match(/^.{50,300}$/)) {
-    textError.innerText = "Message is not valid";
+    textError.innerText = "Invalid message";
     return false;
   }
   textError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
