@@ -21,7 +21,7 @@ body main header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  padding-top: 50px;
 }
 body main header span:nth-child(1) {
   color: #9453a6;

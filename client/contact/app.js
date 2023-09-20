@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
   // first name
   let valueF = fName.value;
   if (!valueF.match(/^.{3,7}$/) || !valueF.match(/^[a-zA-Z]+$/)) {
-    fError.innerText = "Invalid name";
+    fError.innerText = "Invalid first name";
     return false;
   }
   fError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
