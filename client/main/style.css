@@ -63,7 +63,7 @@ body #game-container #img-sad.active {
 }
 body #game-container .title {
   font-family: "Roboto Serif", serif;
-  padding: 0px 30px 30px 30px;
+  padding: 30px;
   font-size: large;
   font-weight: bold;
 }
@@ -82,6 +82,10 @@ body #game-container .questions button {
 body #game-container .score {
   font-family: "Roboto Serif", serif;
   font-size: x-large;
+}
+body #game-container .score #paragraph {
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 body #game-container .score .score_end {
   font-size: xx-large;
