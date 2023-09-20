@@ -15,11 +15,13 @@ let scoreText = document.querySelector(".final-score");
 let progress = document.querySelector("progress");
 let imageHappy = document.querySelector("#img-happy");
 let imageSad = document.querySelector("#img-sad");
+let scoreView = document.querySelector(".score");
 let score = 0;
 let bonus = 10;
 let randomQuestion = {};
 
 trivia_btn.addEventListener("click", () => {
+  scoreView.style.position = 'static'
   nav.style.display = "none";
   container.classList.add("active");
   trivia.classList.add("trivia");
@@ -33,6 +35,8 @@ function display() {
   if (triviaQuestions.length == 0) {
     progress.style.display = "none";
     question.innerText = "";
+    scoreView.style.position = 'absolute'
+    scoreView.style.bottom = '100px'
     choices.forEach((choice) => choice.classList.add("hide"));
     scoreContainer.classList.add("score_end");
     if (score >= 70) {
