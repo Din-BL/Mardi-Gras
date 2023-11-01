@@ -1,139 +1,112 @@
-body {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* body {
   background-color: #f2f2f2;
 }
-body nav .navbar-toggler {
+* body .navbar-toggler {
   background-color: #8cbf3f;
   color: #0d0d0d;
   font-family: "Roboto Serif", serif;
   width: 100%;
 }
-body nav .nav-link {
+* body .nav-link {
   color: #0d0d0d;
   text-align: center;
   font-family: "Roboto Serif", serif;
 }
-body header {
+* body section {
   color: #0d0d0d;
 }
-body header .row .text h1 {
+* body section .row .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* body section .row .text h1 {
   font-family: "Henny Penny";
   font-size: 30px;
   padding-bottom: 10px;
 }
-body header .row .text h1 span:nth-child(1) {
+* body section .row .text h1 span:nth-child(1) {
   color: #9453a6;
 }
-body header .row .text h1 span:nth-child(2) {
+* body section .row .text h1 span:nth-child(2) {
   color: #8cbf3f;
 }
-body header .row .text h1 span:nth-child(3) {
+* body section .row .text h1 span:nth-child(3) {
   color: #f2cc0f;
 }
-body header .row .text p {
+* body section .row .text p {
   font-size: 22px;
   font-family: "Roboto Serif", serif;
 }
-body header .row .img {
-  background-image: url(./images/mathias-elle-_qWqp_VjInU-unsplash.jpg);
+* body section .row .text .mayorInfo {
+  padding-left: 30px;
+}
+* body section .row figure {
+  background-size: cover;
+  border-radius: 5%;
+  height: 600px;
+}
+* body section .row .clown {
+  background-image: url(./assets/mathias-elle-_qWqp_VjInU-unsplash.jpg);
   background-position: center;
-  background-size: cover;
-  border-radius: 5%;
-  height: 600px;
 }
-body main {
-  color: #0d0d0d;
+* body section .row .mayor {
+  background-image: url(./assets/PopTech-_LaToya_Cantrell_\(cropped\).jpg);
 }
-body main .row {
-  margin-bottom: 50px;
-}
-body main .row .text h1 {
-  font-family: "Henny Penny";
-  padding-bottom: 10px;
-}
-body main .row .text h1 span:nth-child(1) {
-  color: #9453a6;
-}
-body main .row .text h1 span:nth-child(2) {
-  color: #8cbf3f;
-}
-body main .row .text h1 span:nth-child(3) {
-  color: #f2cc0f;
-}
-body main .row .text p {
-  font-size: 22px;
-  font-family: "Roboto Serif", serif;
-  padding-left: 50px;
-}
-body main .row .img {
-  background-image: url(./images/PopTech-_LaToya_Cantrell_\(cropped\).jpg);
-  background-size: cover;
-  border-radius: 5%;
-  height: 600px;
-}
-body footer {
+* body footer {
   background-color: #9453a6;
 }
-body footer .row {
+* body footer .row {
   align-items: center;
   font-family: "Roboto Serif", serif;
 }
-body footer .row .left {
+* body footer .row .left {
   flex-direction: column;
   align-items: center;
-  height: 170px;
 }
-body footer .row .left .logo_container {
+* body footer .row .left .logo_container {
   padding-top: 10px;
 }
-body footer .row .left .menu {
+* body footer .row .left .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 380px;
+  padding: 10px 0;
 }
-body footer .row .left .copyright {
-  font-size: small;
-}
-body footer .row .center {
-  flex-direction: column;
-  padding-top: 45px;
-}
-body footer .row .center .icon {
-  display: flex;
-  justify-content: space-evenly;
-}
-body footer .row .right {
+* body footer .row .right {
   flex-direction: column;
   padding: 30px;
 }
-body footer .row .right .info {
+* body footer .row .right .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 25px;
 }
-body footer .row .right .info h5 {
+* body footer .row .right .info h5 {
   font-family: "Pattaya", sans-serif;
 }
-body footer .row .right .info p {
-  font-size: 12px;
-}
-body footer .row .right .icon {
+* body footer .row .right .icon {
   display: flex;
   justify-content: space-evenly;
 }
 @media (max-width: 768px) {
-  body header .row {
+  * body section .row {
     padding: 50px 0px;
   }
-  body header .row .text p {
+  * body section .row .text p {
     font-size: 18px;
   }
-  body header .row .text h1 {
-    font-size: x-large;
-  }
-  body main .row .text p {
-    font-size: 18px;
+  * body section .row .text .mayorInfo {
     padding-left: 0;
+  }
+  * body section .row .text h1 {
+    font-size: x-large;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,123 +1,93 @@
 @import "../Sass/misc";
 
-body {
-  background-color: $white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-  // NavBar
-  nav {
+  body {
+    background-color: $white;
+
+    // NavBar
     @include myNav();
-  }
 
-  // Header
-  header {
-    color: $black;
+    // Section
+    section {
+      color: $black;
 
-    .row {
-      .text {
-        h1 {
-          font-family: $Henny;
-          font-size: 30px;
-          padding-bottom: 10px;
-
-          span:nth-child(1) {
-            color: $purple;
-          }
-
-          span:nth-child(2) {
-            color: $green;
-          }
-
-          span:nth-child(3) {
-            color: $yellow;
-          }
-        }
-
-        p {
-          font-size: 22px;
-          font-family: $Roboto;
-        }
-      }
-
-      .img {
-        background-image: url(./images/mathias-elle-_qWqp_VjInU-unsplash.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 5%;
-        height: 600px;
-      }
-    }
-  }
-
-  // Main
-  main {
-    color: $black;
-
-    .row {
-      margin-bottom: 50px;
-
-      .text {
-        h1 {
-          font-family: $Henny;
-          padding-bottom: 10px;
-
-          span:nth-child(1) {
-            color: $purple;
-          }
-
-          span:nth-child(2) {
-            color: $green;
-          }
-
-          span:nth-child(3) {
-            color: $yellow;
-          }
-        }
-
-        p {
-          font-size: 22px;
-          font-family: $Roboto;
-          padding-left: 50px;
-        }
-      }
-
-      .img {
-        background-image: url(./images/PopTech-_LaToya_Cantrell_\(cropped\).jpg);
-        background-size: cover;
-        border-radius: 5%;
-        height: 600px;
-      }
-    }
-  }
-
-  // Footer
-  footer {
-    @include myFooter();
-  }
-
-  @media (max-width: 768px) {
-    header {
       .row {
-        padding: 50px 0px;
-
         .text {
-
-          p {
-            font-size: 18px;
-          }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
           h1 {
-            font-size: x-large;
+            font-family: $Henny;
+            font-size: 30px;
+            padding-bottom: 10px;
+
+            span:nth-child(1) {
+              color: $purple;
+            }
+
+            span:nth-child(2) {
+              color: $green;
+            }
+
+            span:nth-child(3) {
+              color: $yellow;
+            }
           }
+
+          p {
+            font-size: 22px;
+            font-family: $Roboto;
+          }
+
+          .mayorInfo {
+            padding-left: 30px;
+          }
+        }
+
+        figure {
+          background-size: cover;
+          border-radius: 5%;
+          height: 600px;
+        }
+
+        .clown {
+          background-image: url(./assets/mathias-elle-_qWqp_VjInU-unsplash.jpg);
+          background-position: center;
+        }
+
+        .mayor {
+          background-image: url(./assets/PopTech-_LaToya_Cantrell_\(cropped\).jpg);
         }
       }
     }
 
-    main {
-      .row {
-        .text {
-          p {
-            font-size: 18px;
-            padding-left: 0;
+    // Footer
+    footer {
+      @include myFooter();
+    }
+
+    @media (max-width: 768px) {
+      section {
+        .row {
+          padding: 50px 0px;
+
+          .text {
+            p {
+              font-size: 18px;
+            }
+
+            .mayorInfo {
+              padding-left: 0;
+            }
+
+            h1 {
+              font-size: x-large;
+            }
           }
         }
       }

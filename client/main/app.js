@@ -1,24 +1,24 @@
 import JsonQuestions from "./trivia.json" assert { type: "json" };
 
 let triviaQuestions = [...JsonQuestions];
-let trivia_btn = document.getElementsByClassName("btn-container")[0];
-let nav = document.querySelector("nav");
-let container = document.createElement("div");
-container.id = "trivia-container";
-document.body.append(container);
-let trivia = document.createElement("div");
-let gameContainer = document.querySelector("#game-container");
-let question = document.querySelector(".title");
-let choices = Array.from(document.querySelectorAll(".choice"));
-let scoreContainer = document.querySelector("#paragraph");
-let scoreText = document.querySelector(".final-score");
-let progress = document.querySelector("progress");
-let imageHappy = document.querySelector("#img-happy");
-let imageSad = document.querySelector("#img-sad");
-let scoreView = document.querySelector(".score");
 let score = 0;
 let bonus = 10;
 let randomQuestion = {};
+const nav = document.body.childNodes[6];
+const trivia_btn = document.getElementsByClassName("btn-container")[0];
+const container = document.createElement("div");
+container.id = "trivia-container";
+document.body.append(container);
+const trivia = document.createElement("div");
+const gameContainer = document.querySelector("#game-container");
+const question = document.querySelector(".title");
+const choices = Array.from(document.querySelectorAll(".choice"));
+const scoreContainer = document.querySelector("#paragraph");
+const scoreText = document.querySelector(".final-score");
+const progress = document.querySelector("progress");
+const faceResponse = document.querySelector("picture");
+const scoreView = document.querySelector(".score");
+
 
 trivia_btn.addEventListener("click", () => {
   scoreView.style.position = 'static'
@@ -32,43 +32,40 @@ trivia_btn.addEventListener("click", () => {
 });
 
 function display() {
-  if (triviaQuestions.length == 0) {
+  if (triviaQuestions.length === 0) {
     progress.style.display = "none";
     question.innerText = "";
     scoreView.style.position = 'absolute'
     scoreView.style.bottom = '100px'
     choices.forEach((choice) => choice.classList.add("hide"));
     scoreContainer.classList.add("score_end");
+    faceResponse.classList.add("active");
     if (score >= 70) {
-      imageHappy.classList.add("active");
-    } else if (score === 0) {
-      scoreText.innerText = 0;
-      imageSad.classList.add("active");
+      faceResponse.style.backgroundImage = 'url("./assets/Good.png")';
     } else {
-      imageSad.classList.add("active");
+      faceResponse.style.backgroundImage = 'url("./assets/Sad.jpg")'
     }
+  } else {
+    const questionIndex = Math.floor(Math.random() * triviaQuestions.length);
+    randomQuestion = triviaQuestions[questionIndex];
+    question.innerText = randomQuestion.question;
+    choices.forEach((choice) => {
+      const number = choice.dataset["number"];
+      choice.innerText = randomQuestion["choice" + number];
+    });
+    triviaQuestions.splice(questionIndex, 1);
   }
-  const questionIndex = Math.floor(Math.random() * triviaQuestions.length);
-  randomQuestion = triviaQuestions[questionIndex];
-  question.innerText = randomQuestion.question;
-  choices.forEach((choice) => {
-    const number = choice.dataset["number"];
-    choice.innerText = randomQuestion["choice" + number];
-  });
-  triviaQuestions.splice(questionIndex, 1);
 };
 
 // Choice Event
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     progress.value += 10;
-    let selectedChoice = e.target;
-    let selectedAnswer = selectedChoice.dataset["number"];
-    let classToApply = selectedAnswer == randomQuestion.answer ? "correct" : "incorrect";
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
+    const classToApply = selectedAnswer == randomQuestion.answer ? "correct" : "incorrect";
     selectedChoice.classList.add(classToApply);
-    if (classToApply === "correct") {
-      incrementScore(bonus);
-    }
+    classToApply === "correct" && incrementScore(bonus);
     setTimeout(() => {
       selectedChoice.classList.remove(classToApply);
       display();
@@ -92,8 +89,7 @@ function reset() {
   container.removeChild(container.firstChild);
   choices.forEach((choice) => choice.classList.remove("hide"));
   scoreContainer.classList.remove("score_end");
-  imageHappy.classList.remove("active");
-  imageSad.classList.remove("active");
+  faceResponse.classList.remove("active");
   nav.style.display = "block";
   scoreText.innerText = 0;
   score = 0;

@@ -1,18 +1,18 @@
-let form = document.querySelector("form");
+const form = document.querySelector("form");
+const formSent = document.querySelector(".form-sent");
 // Error Msg
-let fError = document.querySelector("#fName-error");
-let lError = document.querySelector("#lName-error");
-let emailError = document.querySelector("#email-error");
-let textError = document.querySelector("#text-error");
-let formSent = document.querySelector(".form-sent");
+const fError = document.querySelector("#fName-error");
+const lError = document.querySelector("#lName-error");
+const emailError = document.querySelector("#email-error");
+const textError = document.querySelector("#text-error");
 
 //   Validations //
 form.addEventListener("submit", (e) => {
-  let { fName, lName, email, text } = form.elements;
   e.preventDefault();
+  const { fName, lName, email, text } = form.elements;
 
-  // first name
-  let valueF = fName.value;
+  // First name
+  const valueF = fName.value;
   if (!valueF.match(/^.{3,7}$/) || !valueF.match(/^[a-zA-Z]+$/)) {
     fError.innerText = "Invalid first name";
     return false;
@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
   fError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
 
   // last name
-  let valueL = lName.value;
+  const valueL = lName.value;
   if (!valueL.match(/^[a-zA-Z ,.'-]+$/g) || !valueL.match(/^.{2,9}$/)) {
     lError.innerText = "Invalid last name";
     return false;
@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
   lError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
 
   // email
-  let valueE = email.value;
+  const valueE = email.value;
   if (!valueE.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
     emailError.innerText = "Invalid email";
     return false;
@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
   emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
 
   // text area
-  let valueT = text.value;
+  const valueT = text.value;
   if (!valueT.match(/^.{50,300}$/)) {
     textError.innerText = "Invalid message";
     return false;
